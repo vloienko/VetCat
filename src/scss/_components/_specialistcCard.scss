@@ -1,0 +1,87 @@
+.specialistCard {
+  width: min(100%, 344px);
+  &:hover {
+    .specialistCard__img {
+      img {
+        filter: grayscale(35%);
+      }
+    }
+    .specialistCard__hover {
+      transform: translateY(0);
+    }
+    .specialistCard__name,
+    .specialistCard__job {
+      color: $color-text-hover;
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    img {
+      transition: all 0.2s;
+    }
+  }
+
+  &__hover {
+    padding: 17px 0 23px 24px;
+    width: 100%;
+    display: flex;
+    background: $color-bg-gradient;
+    border-radius: 8px;
+    box-shadow: 0px -2px 8px 0px rgba(11, 60, 54, 0.1) inset;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(100%);
+
+    transition: all 0.2s;
+  }
+
+  &__reception {
+    margin-right: 9px;
+    width: 81px;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: $color-text-1;
+  }
+
+  &__date {
+    margin-left: 6px;
+    padding-left: 6px;
+    width: 96px;
+
+    border-left: 1px solid $color-border;
+
+    font-family: 'Manrope';
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-text-1;
+  }
+
+  &__wrapper {
+    margin-top: 16px;
+  }
+
+  &__name {
+    width: 207px;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $color-text-1;
+    transition: all 0.2s;
+  }
+
+  &__job {
+    margin-top: 6px;
+    font-family: 'Manrope';
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text-2;
+    transition: all 0.2s;
+  }
+}
