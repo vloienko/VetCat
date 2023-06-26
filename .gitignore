@@ -1,3 +1,11 @@
+.vs_code
+.DS_Store
+
+dist
+node_modules
+package-lock.json
+gulp/version.json
+
 # Logs
 logs
 *.log
