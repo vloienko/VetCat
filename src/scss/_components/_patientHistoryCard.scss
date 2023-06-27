@@ -1,0 +1,48 @@
+.historyCard {
+  &:hover {
+    .historyCard__img {
+      filter: grayscale(25%);
+    }
+    .historyCard__title {
+      color: $color-text-hover;
+    }
+    .historyCard__date {
+      color: $color-text-hover;
+    }
+  }
+  &_small {
+    width: min(100%, 248px);
+  }
+  &_big {
+    width: min(100%, 344px);
+  }
+
+  &__img {
+    transition: all 0.2;
+  }
+
+  &__wrapper {
+    margin-top: 16px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 24px;
+    color: $color-text-1;
+
+    transition: all 0.2s;
+  }
+
+  &__date {
+    margin-top: 12px;
+
+    color: $color-text-3;
+    font-size: 14px;
+    font-family: 'Manrope';
+    line-height: 20px;
+
+    transition: all 0.2s;
+  }
+}
