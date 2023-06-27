@@ -1,0 +1,116 @@
+.header {
+   height: 96px;
+   background-color: $lightgreen2;
+   border-bottom: 1px solid #CFDFE5;
+
+   &__container {
+      max-width: 1950px;
+      margin: 0 auto;
+      padding: 0 15px;
+      border-left: 1px solid red;
+      border-right: 1px solid red;
+   }
+
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      max-width: 300px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background-color: $lightgreen;
+      height: 96px;
+
+      &-image {
+         max-width: 120px;
+         width: 100%;
+         height: 56px;
+      }
+   
+      &-box {
+         display: flex;
+         flex-direction: column;
+      }
+   }
+
+   &__searsh {
+      max-width: 876px;
+      width: 100%;
+      background-color: #fff;
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 8px;
+      border-left: 1px solid #CFDFE5;
+      border-right: 1px solid #CFDFE5;
+
+      input::placeholder {
+         font-size: 16px;
+         line-height: 24px;
+         color: $color-text-4;
+      }
+   }
+
+   &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 96px;
+   }
+
+   &__address {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-right: 1px solid #CFDFE5;
+      height: 100%;
+      gap: 27px;
+      padding: 19px 43px;
+   }
+
+   &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-width: 203px;
+      span {
+         display: inline-block;
+      }
+   }
+
+   &__street {
+      @extend %street;
+   }
+
+   &__area {
+      margin-top: 4px;
+      @extend %area;
+   }
+
+   &__contact {
+      max-width: 251px;
+      width: 100%;
+      padding: 24px 40px;
+   }
+
+   &__tel {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -1.2px;
+      white-space: nowrap;
+   }
+
+   &__order-call {
+      font-weight: 700;
+      color: $color-red;
+      background-color: transparent;
+   }
+}
