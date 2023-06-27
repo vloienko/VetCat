@@ -11,7 +11,7 @@
 //</MODULES static>============================
 
 // //<MODULES dynamic>============================
-// import './modules/main/';
+// import './modules/main';
 // import './modules/main/';
 // import './modules/main/';
 // import './modules/main/';
