@@ -22,27 +22,27 @@ body {
 }
 
 .sidebar-container {
-	max-width: 1874px;
+	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 15px;
 	min-height: 100%;
 
 	display: flex;
+
 	@include screen-xxl {
 		display: block;
 	}
 }
 
-.container{
-  max-width: 1142px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1142px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 body._lock {
-   overflow: hidden;
+	overflow: hidden;
 }
 
 body {
@@ -61,6 +61,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 }
+
 %area {
 	color: $color-text-2;
 	font-family: 'Manrope';
@@ -72,6 +73,7 @@ body {
 // Ховер-стилі для посилань
 %link-hover {
 	transition: all .3s ease-in-out;
+
 	&:hover {
 		color: $color-text-hover;
 	}
