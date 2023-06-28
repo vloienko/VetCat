@@ -11,7 +11,9 @@
 //</MODULES static>============================
 
 // //<MODULES dynamic>============================
-// import './modules/main';
+import burger from "./modules/main/header-sidebar.js";
+import sidebar from "./modules/main/header-sidebar.js";
+
 // import './modules/main/';
 // import './modules/main/';
 // import './modules/main/';
