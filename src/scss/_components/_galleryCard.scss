@@ -33,7 +33,7 @@
   }
 
   &__title {
-    font-size: 20px;
+    // font-size: 20px;
     font-family: 'Manrope';
     font-weight: 700;
     line-height: 24px;
@@ -41,7 +41,7 @@
 
     transition: all 0.2s;
 
-		/* @include adaptiveValue('font-size', 20px, 12px) */
+    @include adaptiveValue('font-size', 20, 12);
 
 		// TODO Сделать как говорил Влад
   }
