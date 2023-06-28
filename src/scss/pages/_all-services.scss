@@ -1,0 +1,116 @@
+.allServices {
+  padding-top: 57px;
+  display: flex;
+  justify-content: center;
+
+  background: $color-bg-gradient;
+
+  &__container {
+    width: 1112px;
+  }
+
+  &__title {
+    margin-top: 5px;
+
+    font-size: 48px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 56px;
+    color: $color-text-1;
+  }
+
+  &__chosen {
+    margin-top: 46px;
+
+    height: 152px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+  }
+
+  &__chosen-item {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: $color-text-hover;
+
+    transition: all 0.2s;
+
+    &:hover {
+      background: $color-bg-gradient;
+      .allServices__chosen-title {
+        color: $color-text-hover;
+      }
+    }
+
+    &:not(&:first-child) {
+      border-left: 1px solid $color-border-dark;
+    }
+  }
+
+  &__chosen-img {
+  }
+
+  &__chosen-title {
+    font-size: 20px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 24px;
+    color: $color-white;
+
+    transition: all 0.2s;
+  }
+
+  &__servises {
+    margin-top: 59px;
+  }
+
+  &__subtitle {
+    font-size: 30px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 35px;
+    color: $color-text-1;
+  }
+
+  &__list {
+    margin-top: 30px;
+
+		width: 100%;
+		height: 367px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 99px;
+  }
+
+  &__list-item {
+    width: 189px;
+
+		&:nth-child(16) {
+			width: 140px;
+		}
+  }
+
+  &__link {
+    font-size: 20px;
+    font-family: 'Manrope';
+    line-height: 24px;
+    color: $color-text-1;
+
+    transition: all 0.2s;
+    &:hover {
+      color: $color-text-hover;
+    }
+  }
+}
