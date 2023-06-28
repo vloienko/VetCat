@@ -12,16 +12,37 @@ body {
 
 .main {
 	flex: 1 0 auto;
+	height: calc(100vh - 97px);
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 .footer {
 	flex: 0 0 auto;
 }
 
+.sidebar-container {
+	max-width: 1874px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	min-height: 100%;
+
+	display: flex;
+	@include screen-xxl {
+		display: block;
+	}
+}
+
 .container{
   max-width: 1142px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+body._lock {
+   overflow: hidden;
 }
 
 body {
@@ -46,4 +67,12 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 16px;
+}
+
+// Ховер-стилі для посилань
+%link-hover {
+	transition: all .3s ease-in-out;
+	&:hover {
+		color: $color-text-hover;
+	}
 }
