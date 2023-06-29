@@ -15,6 +15,9 @@ body {
   height: calc(100vh - 97px);
   overflow-x: hidden;
   overflow-y: auto;
+  @include screen-xl {
+    height: calc(100vh - 68px);
+  }
 }
 
 .footer {
