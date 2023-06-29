@@ -1,0 +1,49 @@
+.specialist {
+  &__slider {
+    margin-top: 44px;
+  }
+  &__swiper {
+  }
+
+  &__swiper-wrapper {
+    display: flex;
+  }
+
+  &__slide {
+    width: 344px;
+
+    @include screen-s {
+      width: 290px;
+    }
+  }
+
+  &__swiper-prev,
+  &__swiper-next {
+    &::after {
+      display: none;
+    }
+
+    @media (max-width: 1215px) {
+      display: none;
+    }
+  }
+  &__swiper-prev {
+    left: -38px;
+  }
+  &__swiper-next {
+    right: -38px;
+  }
+}
+.swiper-button-prev {
+}
+.specialist {
+}
+.swiper-button-next {
+}
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
