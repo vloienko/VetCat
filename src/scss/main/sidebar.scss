@@ -1,12 +1,15 @@
 .sidebar {
-   @media (max-width: 1875px) {
-      margin-left: 1px;
-   }
+   // margin-left: 38px;
+   padding-left: 38px;
+   width: 300px;
+   background-color: #fff;
+   // @media (max-width: 1875px) {
+   //    margin-left: 1px;
+   // }
    @include screen-xxl {
       position: fixed;
       top: 0;
       left: -100%;
-      width: 300px;
       height: 100%;
       padding-top: 97px;
       transition: left .3s ease 0s;
@@ -31,7 +34,7 @@
    
    &__menu {
       background-color: $color-white;
-      width: 300px;
+      width: 100%;
       height: calc(100vh - 97px - 216px);
       border-right: 1px solid #CFDFE5;
       overflow: auto;
@@ -118,17 +121,17 @@
    }
 
    &__block {
-      position: relative;
+      position: static;
 
       &::before {
          content: '';
          position: absolute;
-         top: 0;
-         left: 0;
+         bottom: 0;
+         left: -1000%;
          background-color: $lightgreen2;
          border-top: 1px solid #CFDFE5;
-         width: 50%;
-         height: 100%;
+         width: 1000%;
+         height: 216px;
          z-index: 1;
       }
    }
@@ -136,7 +139,7 @@
    &__box {
       padding: 48px 0;
       background-color: $lightgreen2;
-      width: 300px;
+      width: 100%;
       height: 216px;
       border-top: 1px solid #CFDFE5;
       border-right: 1px solid #CFDFE5;
@@ -144,9 +147,6 @@
       z-index: 2;
       @include screen-xxl {
          width: 100%;
-      }
-      @include screen-xl {
-         // width: 263px;
       }
 
       &::before {

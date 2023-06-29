@@ -3,6 +3,7 @@
    background-color: $lightgreen2;
    border: 1px solid #CFDFE5;
    position: relative;
+   z-index: 15;
    @include screen-xl {
       height: 68px;
    }
@@ -24,25 +25,28 @@
    }
 
    &__container {
-      max-width: 1874px;
+      max-width: 1920px;
       margin: 0 auto;
-      padding: 0 15px;
       height: 100%;
+      @media (max-width: 475px) {
+         padding: 0 15px;
+      }
    }
 
    &__body {
       display: grid;
-      grid-template-columns: 261px 1fr 492px 214px;
+      // grid-template-columns: 261px 1fr 492px 214px;
+      grid-template-columns: 298px 1fr 492px 251px;
       height: 100%;
       align-items: center;
       @include screen-xxl {
-         grid-template-columns: 261px 1fr 70px 235px 214px;
+         grid-template-columns: 298px 1fr 70px 235px 251px;
       }
       @include screen-xl {
-         grid-template-columns: 261px 1fr 70px 155px;
+         grid-template-columns: 298px 1fr 70px 170px;
       }
       @include screen-l {
-         grid-template-columns: 261px 1fr 55px;
+         grid-template-columns: 298px 1fr 70px;
       }
       @media (max-width: 475px) {
          display: flex;
@@ -55,12 +59,15 @@
       align-items: flex-end;
       justify-content: center;
       gap: 3px;
-      padding: 16px 45px 23px 0px;
+      padding: 16px 45px 23px 38px;
       background-color: $lightgreen;
       @include screen-xl {
-         padding: 5px 0px 5px 0px;
+         padding: 5px 0px 5px 15px;
          align-items: center;
          justify-content: flex-start;
+      }
+      @media (max-width: 475px) {
+         padding: 5px 0px 5px 0px;
       }
 
       &-image {
@@ -265,5 +272,10 @@
 @include screen-l {
    .menu__icon {
       margin-right: 5px;
+   }
+}
+@media (max-width: 475px) {
+   .menu__icon {
+      margin-right: 0;
    }
 }
