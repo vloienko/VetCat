@@ -1,4 +1,5 @@
-import Swiper, { Navigation } from 'swiper';
+// import Swiper, { Navigation } from 'swiper';
+import Swiper from 'swiper/bundle';
 
 function addSwiperForSpecialistSwiper() {
   if (document.querySelector('.specialist__swiper')) {
@@ -17,5 +18,22 @@ function addSwiperForSpecialistSwiper() {
     });
   }
 }
-
 addSwiperForSpecialistSwiper();
+
+
+function petServiceSwiper() {
+  const swiper = new Swiper('.pet-service__swiper', {
+
+    slidesPerView: 3,
+    spaceBetween: 40,
+    grabCursor: true,
+
+    navigation: {
+      nextEl: '.pet-service-next',
+      prevEl: '.pet-service-prev',
+    },
+  
+  });
+}
+petServiceSwiper();
+

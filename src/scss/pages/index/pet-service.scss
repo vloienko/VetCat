@@ -1,0 +1,45 @@
+.pet-service {
+   padding-top: 162px;
+   padding-bottom: 130px;
+
+   &__container {
+      max-width: 1210px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px;
+   }
+
+   &__body {
+   }
+
+   &__holder {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 40px;
+   }
+
+   &__title {
+      max-width: 490px;
+   }
+
+   &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+   }
+
+   &__button {
+   }
+
+   &__swiper {
+      margin-top: 62px;
+      padding: 0 34px;
+   }
+
+
+   &__slide {
+   }
+}
+
