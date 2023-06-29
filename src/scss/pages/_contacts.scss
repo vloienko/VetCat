@@ -1,0 +1,16 @@
+.contacts {
+  padding: 57px 0 112px;
+
+  &__title {
+    margin-top: 6px;
+
+    @include adaptiveValue('font-size', 48, 32);
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 56px;
+    color: $color-text-1;
+  }
+
+  @import '../_components/contacts/info';
+  @import '../_components/contacts/delivery';
+}
