@@ -1,6 +1,5 @@
 .header {
-   // height: 97px;
-   @include adaptiveValue('height', 97, 68);
+   height: 97px;
    background-color: $lightgreen2;
    border: 1px solid #CFDFE5;
    position: relative;

@@ -50,7 +50,7 @@ function sidebar() {
 
    function openContent(content) {
       content.style.height = `${content.scrollHeight}px`;
-      content.style.overflow = "visible";
+      /* content.style.overflow = "visible"; */
       content.style.marginTop = "20px";
 
    }

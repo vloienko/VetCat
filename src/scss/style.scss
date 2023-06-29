@@ -13,38 +13,21 @@
 
 // sidebar
 @import 'main/sidebar';
-.path {
-  display: flex;
-  align-items: center;
 
-  &__main {
-    font-size: 14px;
-    font-family: 'Manrope';
-    line-height: 20px;
-    color: $color-text-3;
+//Components
 
-    transition: all 0.2s;
-    &:hover {
-      color: $color-text-hover;
-    }
-  }
-
-  &__arrow {
-    margin: 0 8px;
-  }
-
-  &__this {
-    font-size: 14px;
-    font-family: 'Manrope';
-    line-height: 20px;
-    color: $color-text-4;
-  }
-}
+@import '_components/patientHistoryCard';
+@import '_components/galleryCard';
+@import '_components/serviceCard';
+@import '_components/specialistcCard';
 
 //<PAGES STYLE>=====================================
-@import '_components/patientHistoryCard';
-@import "_components/galleryCard";
+
+@import '_components/galleryCard';
 @import 'pages/all-services';
+@import 'pages/services';
 // @import "pages/";
 // @import "pages/";
 //</PAGES STYLE>====================================
+
+@import '_base/extra.scss';
