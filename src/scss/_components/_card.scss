@@ -47,10 +47,10 @@
       gap: 20px;
     }
   }
-  &__text {
+  &__service {
     max-width: 344px;
   }
-  &__text,
+  &__service,
   &__price {
     @include adaptiveValue('font-size', 17, 12);
     font-family: 'Manrope';
