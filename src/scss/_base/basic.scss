@@ -1,80 +1,112 @@
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 .wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
 .main {
-	flex: 1 0 auto;
-	height: calc(100vh - 97px);
-	overflow-x: hidden;
-	overflow-y: auto;
+  flex: 1 0 auto;
+  height: calc(100vh - 97px);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .footer {
-	flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 .sidebar-container {
-	max-width: 1920px;
-	width: 100%;
-	margin: 0 auto;
-	min-height: 100%;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
 
-	display: flex;
+  display: flex;
 
-	@include screen-xxl {
-		display: block;
-	}
+  @include screen-xxl {
+    display: block;
+  }
 }
 
 .container {
-	max-width: 1142px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
+  max-width: 1142px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 body._lock {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 body {
-	font-family: 'Manrope';
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 24px;
-	color: $color-text-2;
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-text-2;
 }
 
 // Стилі для назви вулиць та районів
 %street {
-	color: $color-text-1;
-	font-family: 'Manrope';
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 16px;
+  color: $color-text-1;
+  font-family: 'Manrope';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 %area {
-	color: $color-text-2;
-	font-family: 'Manrope';
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 16px;
+  color: $color-text-2;
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 // Ховер-стилі для посилань
 %link-hover {
-	transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
-	&:hover {
-		color: $color-text-hover;
-	}
+  &:hover {
+    color: $color-text-hover;
+  }
+}
+
+// Хлебные крошки
+
+.path {
+  display: flex;
+  align-items: center;
+
+  &__main {
+    font-size: 14px;
+    font-family: 'Manrope';
+    line-height: 20px;
+    color: $color-text-3;
+
+    transition: all 0.2s;
+    &:hover {
+      color: $color-text-hover;
+    }
+  }
+
+  &__arrow {
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__this {
+    font-size: 14px;
+    font-family: 'Manrope';
+    line-height: 20px;
+    color: $color-text-4;
+  }
 }
