@@ -1,3 +1,7 @@
+// Swiper
+@import '../../node_modules//swiper/swiper-bundle';
+
+
 //<SETTINGS>========================================
 @import '_fonts/fonts';
 @import '_base/null';
@@ -23,6 +27,11 @@
 @import '_components/card';
 
 //<PAGES STYLE>=====================================
+
+// index.html
+@import "pages/index/vet-center";
+@import "pages/index/pet-service";
+// @import "pages/";
 
 @import '_components/galleryCard';
 @import 'pages/all-services';
