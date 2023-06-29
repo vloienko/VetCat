@@ -1,5 +1,6 @@
 .specialistCard {
   width: min(100%, 344px);
+  position: relative;
   &:hover {
     .specialistCard__img {
       img {

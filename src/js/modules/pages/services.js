@@ -16,13 +16,6 @@ function addEventListenerForServicesToggle() {
         addActiveClassForToggleItem(index);
       });
     });
-
-    /* servicesToggle.addEventListener('click', ({ target }) => {
-      if (!target.classList.contains('services__toggle-item_active')) {
-        servicesToggle.classList.add('services__toggle_active');
-        target.classList.add('services__toggle-item_active');
-      }
-    }); */
   }
 }
 
