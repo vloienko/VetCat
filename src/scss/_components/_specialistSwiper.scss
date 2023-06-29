@@ -23,6 +23,17 @@
       display: none;
     }
 
+    svg {
+      fill: $color-text-1;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      svg {
+        fill: $color-text-hover;
+      }
+    }
+
     @media (max-width: 1215px) {
       display: none;
     }
@@ -34,16 +45,14 @@
     right: -38px;
   }
 }
-.swiper-button-prev {
-}
-.specialist {
-}
-.swiper-button-next {
-}
 
 .swiper {
 }
 .swiper-wrapper {
 }
 .swiper-slide {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
 }

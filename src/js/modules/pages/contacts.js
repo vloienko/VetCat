@@ -5,11 +5,9 @@ function addEventListenerForContactsToggle() {
 
     const addActiveClassForToggleItemAndTab = index => {
       contactsToogleItem.forEach(elem => {
-        elem.classList.contains('contacts__toggle-item_active')
-          ? elem.classList.remove('contacts__toggle-item_active')
-          : null;
+        elem.classList.contains('toggle__item_active') ? elem.classList.remove('toggle__item_active') : null;
       });
-      contactsToogleItem[index].classList.add('contacts__toggle-item_active');
+      contactsToogleItem[index].classList.add('toggle__item_active');
       contactsTabs.forEach(elem => {
         elem.classList.contains('contacts__tab_active') ? elem.classList.remove('contacts__tab_active') : null;
       });

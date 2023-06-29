@@ -4,11 +4,9 @@ function addEventListenerForServicesToggle() {
 
     const addActiveClassForToggleItem = index => {
       servicesToggleItem.forEach(elem => {
-        elem.classList.contains('services__toggle-item_active')
-          ? elem.classList.remove('services__toggle-item_active')
-          : null;
+        elem.classList.contains('toggle__item_active') ? elem.classList.remove('toggle__item_active') : null;
       });
-      servicesToggleItem[index].classList.add('services__toggle-item_active');
+      servicesToggleItem[index].classList.add('toggle__item_active');
     };
 
     servicesToggleItem.forEach((elem, index) => {
