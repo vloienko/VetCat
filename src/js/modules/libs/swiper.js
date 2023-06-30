@@ -28,12 +28,24 @@ function petServiceSwiper() {
     spaceBetween: 40,
     grabCursor: true,
 
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1081: {
+        spaceBetween: 40,
+        slidesPerView: 3,
+      }
+    },
+
     navigation: {
       nextEl: '.pet-service-next',
       prevEl: '.pet-service-prev',
     },
-  
+
   });
 }
 petServiceSwiper();
-

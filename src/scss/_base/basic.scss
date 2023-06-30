@@ -38,6 +38,13 @@ body {
   }
 }
 
+.swiper-container {
+  max-width: 1210px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container {
   max-width: 1142px;
   width: 100%;
@@ -61,11 +68,9 @@ body {
 // Заголовки
 .h2-title {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 56px;
   color: $color-text-1;
-  // @include adaptiveValue('font-size', 48, );
-  // @include adaptiveValue('line-height', 56, );
+  @include adaptiveValue('font-size', 48, 22);
+  @include adaptiveValue('line-height', 56, 32);
 }
 
 // Стилі для назви вулиць та районів

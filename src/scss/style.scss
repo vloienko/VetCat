@@ -24,6 +24,7 @@
 @import '_components/galleryCard';
 @import '_components/serviceCard';
 @import '_components/specialistcCard';
+@import '_components/specialistSwiper';
 @import '_components/card';
 @import '_components/buttons';
 
@@ -32,7 +33,10 @@
 // index.html
 @import "pages/index/vet-center";
 @import "pages/index/pet-service";
+@import "pages/index/schedule";
+@import "pages/index/index-spec";
 // @import "pages/";
+
 
 @import '_components/galleryCard';
 @import 'pages/all-services';
@@ -42,4 +46,4 @@
 // @import "pages/";
 //</PAGES STYLE>====================================
 
-// @import '_base/extra.scss';
+@import '_base/extra.scss';
