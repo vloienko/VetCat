@@ -1,0 +1,34 @@
+.info {
+  padding-bottom: 160px;
+
+  &__header {
+    padding-top: 57px;
+    padding-bottom: 24px;
+
+    background: $color-bg-gradient;
+  }
+
+  &__title {
+    margin-top: 5px;
+
+    @include adaptiveValue('font-size', 48, 32);
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 56px;
+    color: $color-text-1;
+  }
+
+  &__toggle {
+    margin-top: 46px;
+    div {
+      @include adaptiveValue('font-size', 16, 14.5)
+    }
+  }
+
+  &__body {
+		padding-top: 8px;
+  }
+
+  @import '../_components/info/history';
+  @import '../_components/info/articles';
+}
