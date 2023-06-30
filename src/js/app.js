@@ -15,6 +15,7 @@ import sidebar from './modules/main/header-sidebar.js';
 // index.html
 import petServiceSwiper from './modules/libs/swiper.js';
 
+
 import smoothLinks from './modules/libs/common.js';
 
 import swiper from './modules/libs/swiper.js';

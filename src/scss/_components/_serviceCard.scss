@@ -1,14 +1,20 @@
 .serviceCard {
-  padding: 28px 32px 0;
+  padding: 28px 32px;
   width: min(100%, 344px);
   height: 240px;
-
+  overflow: auto;
   background: $color-bg-gradient;
   border-radius: 8px;
 
   transition: all 0.2s;
 
   position: relative;
+  @include screen-xl {
+    width: 100%;
+  }
+  @media (max-width: 375px) {
+    padding: 20px 15px;
+  }
 
   &:hover {
     background: $color-text-hover;
@@ -62,9 +68,14 @@
 
     opacity: 0;
     transition: all 0.2s;
+    @media (max-width: 375px) {
+      right: 20px;
+      bottom: 10px;
+    }
 
 		svg {
 			margin-left: 8px;
 		}
+    
   }
 }
