@@ -223,8 +223,8 @@ function toggleContentForInfo(index) {
     `;
   } else {
     infoBody.innerHTML = `
-    <div class="history">
-	<div class="history__group">
+    <div class="historyPatient">
+	<div class="historyPatient__group">
 		<div class="historyCard historyCard_big">
 	<div class="historyCard__img">
 		<img src="img/pets/pets1.jpg" alt="pets" loading="lazy">

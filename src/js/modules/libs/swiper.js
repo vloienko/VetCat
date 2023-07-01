@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-// import Swiper, { Navigation } from 'swiper';
 import Swiper from 'swiper/bundle';
-=======
-import Swiper from 'swiper';
->>>>>>> f40e657287392379298668eb854c4603e4b35cd3
 
 function addSwiperForSpecialistSwiper() {
   if (document.querySelector('.specialist__swiper')) {
@@ -22,8 +17,6 @@ function addSwiperForSpecialistSwiper() {
     });
   }
 }
-<<<<<<< HEAD
-=======
 
 function addSwiperForOurMissionSwiper() {
   if (document.querySelector('.our-mission__swiper')) {
@@ -43,7 +36,6 @@ function addSwiperForOurMissionSwiper() {
   }
 }
 
->>>>>>> f40e657287392379298668eb854c4603e4b35cd3
 addSwiperForSpecialistSwiper();
 
 
