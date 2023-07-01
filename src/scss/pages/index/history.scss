@@ -1,0 +1,122 @@
+.specialist__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+  @include screen-l {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.history {
+  background: #eef3f7;
+  @include adaptiveValue('padding-top', 130, 100);
+  @include adaptiveValue('padding-bottom', 242, 100);
+  padding-top: 130px;
+  padding-bottom: 242px;
+  position: relative;
+
+  & .container {
+    position: relative;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    max-width: 205px;
+  }
+
+  &__title {
+    max-width: 785px;
+    @include screen-l {
+      max-width: 100%;
+    }
+  }
+
+  &__card-top img {
+    max-width: 248px;
+    width: 100%;
+  }
+
+  &__slide {
+    width: auto !important;
+    margin-right: 40px;
+  }
+
+  &__card-title {
+    color: #292d33;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    max-width: 248px;
+    margin-bottom: 13px;
+  }
+
+  &__date {
+    color: #797c80;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  &__button-prev,
+  &__button-next {
+    @media (max-width: 767) {
+      top: -10%;
+    }
+  }
+  &__big-cat {
+    max-width: 436px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+   & .specialist__bottom {
+    margin-top: 62px;
+   }
+}
+
+.button-prev,
+.button-next {
+  position: absolute;
+  top: 17.5%;
+  width: 20px;
+  height: 20px;
+  height: 100%;
+  cursor: pointer;
+  @media (max-width: 1300px) {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 31px;
+  }
+}
+
+.button-next {
+  left: unset;
+  right: -20px !important;
+  transform: unset;
+  @media (max-width: 1300px) {
+    left: 68px;
+    right: unset;
+  }
+}
+.button-prev {
+  left: -20px !important;
+}
