@@ -75,3 +75,17 @@ function petServiceSwiper() {
   });
 }
 petServiceSwiper();
+
+function swiperHistory() {
+  const swiperHistory = document.querySelector(".history__swiper");
+  if (swiperHistory) {
+    const swiper = new Swiper(swiperHistory, {
+      slidesPerView: "auto",
+      navigation: {
+        nextEl: ".history__button-next",
+        prevEl: ".history__button-prev",
+      },
+    });
+  }
+}
+swiperHistory();
