@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_static/head.html',{
+"title":"Головна"
+})
+
+<body>
+	<div class="wrapper">
+		@@include("html/main/header.html",{})
+		<div class="sidebar-container">
+			@@include('html/main/sidebar.html',{})
+			<main class="main">
+
+				@@include('html/pages/contacts.html', {})
+
+			</main>
+		</div>
+		@@include('html/main/footer.html',{})
+	</div>
+	@@include('html/_static/script.html',{})
+</body>
+
+</html>

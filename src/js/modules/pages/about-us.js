@@ -315,3 +315,22 @@ function toggleContentForAboutUs(index) {
       break;
   }
 }
+
+function addShowModal() {
+  if (document.querySelector('.galleryCard')) {
+    const galleryCard = document.querySelectorAll('.galleryCard');
+    const galleryModal = document.querySelector('.gallery-modal');
+
+    galleryCard.forEach(elem => {
+      elem.addEventListener('click', e => {
+        galleryModal.classList.add('gallery-modal_show');
+      });
+    });
+
+    galleryModal.querySelector('.gallery-modal__close').addEventListener('click', () => {
+      galleryModal.classList.remove('gallery-modal_show');
+    });
+  }
+}
+
+addShowModal();
