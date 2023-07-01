@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+// import Swiper, { Navigation } from 'swiper';
+import Swiper from 'swiper/bundle';
+=======
 import Swiper from 'swiper';
+>>>>>>> f40e657287392379298668eb854c4603e4b35cd3
 
 function addSwiperForSpecialistSwiper() {
   if (document.querySelector('.specialist__swiper')) {
@@ -17,6 +22,8 @@ function addSwiperForSpecialistSwiper() {
     });
   }
 }
+<<<<<<< HEAD
+=======
 
 function addSwiperForOurMissionSwiper() {
   if (document.querySelector('.our-mission__swiper')) {
@@ -36,4 +43,49 @@ function addSwiperForOurMissionSwiper() {
   }
 }
 
+>>>>>>> f40e657287392379298668eb854c4603e4b35cd3
 addSwiperForSpecialistSwiper();
+
+
+function petServiceSwiper() {
+  const swiper = new Swiper('.pet-service__swiper', {
+
+    slidesPerView: 3,
+    spaceBetween: 40,
+    grabCursor: true,
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1081: {
+        spaceBetween: 40,
+        slidesPerView: 3,
+      }
+    },
+
+    navigation: {
+      nextEl: '.pet-service-next',
+      prevEl: '.pet-service-prev',
+    },
+
+  });
+}
+petServiceSwiper();
+
+function swiperHistory() {
+  const swiperHistory = document.querySelector(".history__swiper");
+  if (swiperHistory) {
+    const swiper = new Swiper(swiperHistory, {
+      slidesPerView: "auto",
+      navigation: {
+        nextEl: ".history__button-next",
+        prevEl: ".history__button-prev",
+      },
+    });
+  }
+}
+swiperHistory();
