@@ -21,14 +21,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 20;
 
   opacity: 0;
+  z-index: -10;
 
   transition: all 0.2s;
 
   &_show {
     opacity: 1;
+    z-index: 20;
   }
 
   &__close {
@@ -118,11 +119,13 @@
   }
 
   &__thumbs {
-    width: min(100%, 1104px);
-		height: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
   }
 
   &__thumbs-wrapper {
+    width: min(100%, 1104px);
     align-items: center;
     .swiper-slide-thumb-active {
       opacity: 1;
@@ -136,7 +139,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: $color-text-hover;
-				z-index: -1;
+        z-index: -1;
       }
     }
   }
