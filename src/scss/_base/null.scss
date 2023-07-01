@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   border: 0;
-  // position: relative;
 }
 
 *,
@@ -68,7 +67,7 @@ ul li {
   list-style: none;
 }
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   vertical-align: top;
 }

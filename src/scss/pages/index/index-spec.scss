@@ -1,0 +1,38 @@
+.index-spec {
+   @include adaptiveValue('padding-top', 120, 61);
+   @include adaptiveValue('padding-bottom', 186, 93);
+
+   &__body {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      @include adaptiveValue('gap', 50, 20);
+      @include screen-l {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+   }
+
+   &__title {
+      max-width: 702px;
+      @include screen-l {
+         max-width: 100%;
+      }
+   }
+
+   &__button {
+      max-width: 228px;
+   }
+
+   .specialist__slider {
+      margin-top: 62px;
+      @include screen-l {
+         margin-top: 40px;
+      }
+   }
+
+   & .specialistCard__img {
+      position: relative;
+   }
+}
+
