@@ -18,6 +18,8 @@
 
   background: rgba($color: $color-blackout, $alpha: 0.8999999761581421);
 
+  overflow: hidden;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +27,7 @@
   opacity: 0;
   z-index: -10;
 
-  transition: all 0.2s;
+  transition: all 0.1s;
 
   &_show {
     opacity: 1;
@@ -46,6 +48,14 @@
       &:hover {
         stroke: $color-text-hover;
       }
+    }
+
+    @include screen-l {
+      right: 32px;
+    }
+
+    @media (max-width: 425px) {
+      right: 12px;
     }
   }
 
@@ -72,7 +82,15 @@
   }
 
   &__swiper {
-    width: 900px;
+    width: min(100%, 900px);
+
+    @media (max-height: 927px) {
+      width: 60%;
+    }
+
+    @media (max-width: 425px) {
+      width: 80%;
+  }
   }
 
   &__swiper-wrapper {
@@ -80,7 +98,7 @@
 
   &__swiper-slide {
     width: min(100%, 900px);
-    height: min(100%, 569px);
+    height: auto;
   }
 
   &__swiper-prev,
@@ -104,6 +122,10 @@
     &::after {
       display: none;
     }
+
+    @include screen-xl {
+      display: none;
+    }
   }
 
   &__swiper-prev {
@@ -116,6 +138,7 @@
   &__thumbsSlider {
     margin: 0 auto;
     margin-top: 69px;
+    padding: 0 15px;
   }
 
   &__thumbs {
