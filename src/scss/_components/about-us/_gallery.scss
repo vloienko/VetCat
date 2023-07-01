@@ -1,0 +1,157 @@
+.gallery {
+  padding: 64px 0 128px;
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @media (max-width: 1141px) {
+      justify-content: center;
+    }
+  }
+}
+
+.gallery-modal {
+  width: 100%;
+  height: 100%;
+
+  background: rgba($color: $color-blackout, $alpha: 0.8999999761581421);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  z-index: -10;
+
+  transition: all 0.2s;
+
+  &_show {
+    opacity: 1;
+    z-index: 20;
+  }
+
+  &__close {
+    position: absolute;
+    top: 32px;
+    right: 79px;
+    svg {
+      stroke: $color-white;
+
+      cursor: pointer;
+
+      transition: all 0.2s;
+
+      &:hover {
+        stroke: $color-text-hover;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 29px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: $color-white;
+  }
+
+  &__subtitle {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba($color: $color-text-3, $alpha: 0.800000011920929);
+    text-align: center;
+  }
+
+  &__slider {
+    margin: 0 auto;
+    margin-top: 82px;
+  }
+
+  &__swiper {
+    width: 900px;
+  }
+
+  &__swiper-wrapper {
+  }
+
+  &__swiper-slide {
+    width: min(100%, 900px);
+    height: min(100%, 569px);
+  }
+
+  &__swiper-prev,
+  &__swiper-next {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $color-text-hover;
+    border-radius: 16px;
+
+    top: 48.7%;
+
+    svg {
+      fill: $color-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &__swiper-prev {
+    @include adaptiveValue('left', 240, -240);
+  }
+  &__swiper-next {
+    @include adaptiveValue('right', 240, -240);
+  }
+
+  &__thumbsSlider {
+    margin: 0 auto;
+    margin-top: 69px;
+  }
+
+  &__thumbs {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__thumbs-wrapper {
+    width: min(100%, 1104px);
+    align-items: center;
+    .swiper-slide-thumb-active {
+      opacity: 1;
+      // border: 3px solid $color-text-hover;
+      &::after {
+        content: '';
+        width: calc(100% + 6px);
+        height: calc(100% + 6px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $color-text-hover;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__thumbs-slide {
+    width: 96px;
+    height: 64px;
+
+    opacity: 0.4;
+
+    cursor: pointer;
+
+    position: relative;
+  }
+}

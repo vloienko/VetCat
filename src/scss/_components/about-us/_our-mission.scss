@@ -1,0 +1,110 @@
+.our-mission {
+  padding: 68px 0 160px;
+
+  &__wrapper {
+    width: min(100%, 824px);
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 36px;
+    color: $color-text-1;
+  }
+
+  &__descr {
+    margin-top: 19px;
+
+    font-size: 17px;
+    line-height: 28px;
+    color: $color-text-1;
+  }
+
+  &__img {
+    margin-top: 53px;
+    margin-bottom: 7px;
+  }
+
+  &__subtitle {
+    margin-top: 44px;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    color: $color-text-1;
+
+    &_first {
+      margin-top: 51px;
+    }
+  }
+
+  &__text {
+    margin-top: 21px;
+    font-size: 17px;
+    line-height: 28px;
+    color: $color-text-1;
+  }
+
+  &__slider {
+    margin-top: 42px;
+  }
+
+  &__swiper {
+    position: relative;
+    &::before,
+    &::after {
+      content: url('../../../img/about-us/blackout.svg');
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    &::before {
+      left: -36px;
+    }
+    &::after {
+      right: -36px;
+    }
+  }
+
+  &__swiper-wrapper {
+  }
+
+  &__swiper-slide {
+    width: 266px;
+    height: 376px;
+
+    background: $color-white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px rgba(26, 57, 63, 0.1);
+  }
+
+  &__swiper-prev,
+  &__swiper-next {
+    top: 49%;
+    &::after {
+      display: none;
+    }
+
+    svg {
+      fill: $color-text-1;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      svg {
+        fill: $color-text-hover;
+      }
+    }
+
+    @media (max-width: 1215px) {
+      display: none;
+    }
+  }
+  &__swiper-prev {
+    left: -38px;
+  }
+  &__swiper-next {
+    right: -38px;
+  }
+}

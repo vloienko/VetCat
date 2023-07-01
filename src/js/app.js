@@ -22,6 +22,7 @@ import swiper from './modules/libs/swiper.js';
 import addEventListenerForServicesToggle from './modules/pages/services.js';
 import addActiveClassForToggleItemAndTab from './modules/pages/contacts.js';
 import addEventListenerForInfoToggle from './modules/pages/info.js';
+import addEventListenerForAboutUsToggle from './modules/pages/about-us.js';
 
 // import './modules/main/';
 // import './modules/main/';
