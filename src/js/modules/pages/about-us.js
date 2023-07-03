@@ -88,6 +88,27 @@ function addShowModalReview() {
   }
 }
 
+function showFeedback() {
+  if (document.querySelector('.btn_feedback')) {
+    const btnsFeedback = document.querySelectorAll('.btn_feedback');
+    const closeFeedback = document.querySelectorAll('.popUp-feedback__close');
+    const popUp = document.querySelector('.popUp-feedback');
+
+    btnsFeedback.forEach(elem => {
+      elem.addEventListener('click', () => {
+        console.log('click');
+        popUp.classList.add('popUp-feedback_show');
+      });
+    });
+
+    closeFeedback.forEach(elem => {
+      elem.addEventListener('click', e => {
+        popUp.classList.remove('popUp-feedback_show');
+      });
+    });
+  }
+}
+
 function toggleContentForAboutUs(index) {
   const aboutUsBody = document.querySelector('.about-us__body .container');
 
@@ -429,7 +450,7 @@ function toggleContentForAboutUs(index) {
 			<div class="review__title">
 				Будем рады вашим отзывам — опубликуем все без исключения
 			</div>
-			<div class="review__btn btn btn_green">
+			<div class="review__btn btn btn_green btn_feedback">
 				Оставить отзыв
 			</div>
 		</div>
@@ -554,6 +575,7 @@ function toggleContentForAboutUs(index) {
 	</div>
 					`;
       addShowModalReview();
+			showFeedback();
       break;
     default:
       break;
