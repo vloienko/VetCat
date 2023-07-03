@@ -1,7 +1,6 @@
 // Swiper
 @import '../../node_modules//swiper/swiper-bundle';
 
-
 //<SETTINGS>========================================
 @import '_fonts/fonts';
 @import '_base/null';
@@ -31,15 +30,14 @@
 //<PAGES STYLE>=====================================
 
 // index.html
-@import "pages/index/vet-center";
-@import "pages/index/pet-service";
-@import "pages/index/schedule";
-@import "pages/index/index-spec";
-@import "pages/index/history";
-@import "pages/index/blog";
-@import "pages/index/social";
-@import "pages/index/adress";
-
+@import 'pages/index/vet-center';
+@import 'pages/index/pet-service';
+@import 'pages/index/schedule';
+@import 'pages/index/index-spec';
+@import 'pages/index/history';
+@import 'pages/index/blog';
+@import 'pages/index/social';
+@import 'pages/index/adress';
 
 @import '_components/galleryCard';
 @import 'pages/all-services';
@@ -47,8 +45,10 @@
 @import 'pages/contacts';
 @import 'pages/info';
 @import 'pages/about-us';
+@import 'pages/search';
+@import 'pages/timetable';
 // @import "pages/";
 // @import "pages/";
 //</PAGES STYLE>====================================
 
-// @import '_base/extra.scss';
+@import '_base/extra.scss';

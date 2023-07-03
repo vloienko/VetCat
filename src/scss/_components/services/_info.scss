@@ -58,6 +58,8 @@
 	font-family: 'Manrope';
 	line-height: 28px;
 	color: $color-text-1;
+
+	position: relative;
 	&::before {
 		content: '';
 		width: 11px;
@@ -72,6 +74,7 @@
 &__container2 {
 	max-width: 218px;
 	width: 100%;
+	position: relative;
 
 	@media (max-width: 475px) {
 		max-width: 100%;
