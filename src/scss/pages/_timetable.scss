@@ -1,0 +1,168 @@
+.timetable {
+  padding-top: 57px;
+
+  &__title {
+    margin-top: 6px;
+
+    @include adaptiveValue('font-size', 48, 32);
+    font-family: 'Manrope';
+    font-weight: 700;
+    line-height: 56px;
+    color: $color-text-1;
+  }
+
+  &__toggle {
+    margin-top: 46px;
+  }
+
+  &__list {
+    margin-top: 32px;
+  }
+
+  &__item {
+    padding: 44px 0 77px;
+
+    &:nth-child(odd) {
+      background: $lightgreen2;
+    }
+  }
+
+  &__table {
+    position: relative;
+  }
+
+  &__head {
+    border-bottom: 1px solid $color-border;
+  }
+
+  &__head-title {
+    width: min(100%, 239px);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+    color: $color-text-1;
+
+    position: absolute;
+    top: 19px;
+    left: 0;
+  }
+
+  &__slider {
+    @include adaptiveValue('padding-left', 344, 20);
+    padding-top: 27px;
+    height: 91px;
+
+    position: relative;
+    z-index: 2;
+  }
+
+  &__swiper {
+    width: 768px;
+    overflow: hidden;
+
+  }
+
+  &__swiper-wrapper {
+    width: calc((96px + 16px) * 21);
+    width: auto;
+    display: flex;
+    gap: 16px;
+
+    position: relative;
+    z-index: 0;
+
+    transition: all 0.2s;
+  }
+
+  &__date {
+    width: 96px;
+    span {
+      display: block;
+      &:first-child {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 20px;
+        color: $color-text-1;
+      }
+      &:last-child {
+        margin-top: 6px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-text-3;
+      }
+    }
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    display: none;
+
+    &_show {
+      display: block;
+    }
+
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    svg {
+      fill: $color-text-1;
+      transition: all 0.2s;
+
+      &:hover {
+        fill: $color-text-hover;
+      }
+    }
+  }
+
+  &__btn-next {
+    right: -40px;
+  }
+
+  &__btn-prev {
+    right: 792px;
+  }
+
+  &__body {
+    margin-top: 23px;
+  }
+
+  &__body-row {
+    height: auto;
+    display: flex;
+    gap: 40px;
+
+    &:not(&:first-child) {
+      margin-top: 18px;
+    }
+  }
+
+  &__doctor {
+    width: 304px;
+  }
+
+  &__name {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $color-text-1;
+  }
+
+  &__services {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-text-3;
+  }
+
+  &__time {
+    width: 96px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+    color: $color-text-1;
+  }
+}
