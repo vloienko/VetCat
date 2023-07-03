@@ -18,7 +18,6 @@
 @import 'main/sidebar';
 
 //Components
-
 @import '_components/patientHistoryCard';
 @import '_components/galleryCard';
 @import '_components/serviceCard';
@@ -39,7 +38,7 @@
 @import 'pages/index/social';
 @import 'pages/index/adress';
 
-@import '_components/galleryCard';
+@import '_components/galleryCard';                                                       
 @import 'pages/all-services';
 @import 'pages/services';
 @import 'pages/contacts';
@@ -50,4 +49,4 @@
 // @import "pages/";
 //</PAGES STYLE>====================================
 
-@import '_base/extra.scss';
+// @import '_base/extra.scss';
