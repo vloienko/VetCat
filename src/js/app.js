@@ -19,6 +19,7 @@ import petServiceSwiper from './modules/libs/swiper.js';
 import './modules/libs/common.js';
 
 import './modules/libs/swiper.js';
+import './modules/popUp/popUp.js';
 import './modules/pages/services.js';
 import './modules/pages/contacts.js';
 import './modules/pages/info.js';

@@ -39,7 +39,6 @@
 @import 'pages/index/social';
 @import 'pages/index/adress';
 
-@import '_components/galleryCard';
 @import 'pages/all-services';
 @import 'pages/services';
 @import 'pages/contacts';
@@ -47,8 +46,8 @@
 @import 'pages/about-us';
 @import 'pages/search';
 @import 'pages/timetable';
-// @import "pages/";
-// @import "pages/";
+
+@import 'pop-up/pop-up';
 //</PAGES STYLE>====================================
 
 @import '_base/extra.scss';
