@@ -44,8 +44,14 @@ function swipeTable(mod) {
     if (countSlide < 1) {
       btnPrev.classList.remove(`timetable__btn-prev_show`);
     }
-    if (countSlide < swiperWrapper[0].children.length - 7) {
-      btnNext.classList.add(`timetable__btn-next_show`);
+    if (swiperWrapper[0].parentNode.clientWidth == 560) {
+      if (countSlide <= swiperWrapper[0].children.length - 6) {
+        btnNext.classList.add(`timetable__btn-next_show`);
+      }
+    } else {
+      if (countSlide < swiperWrapper[0].children.length - 7) {
+        btnNext.classList.add(`timetable__btn-next_show`);
+      }
     }
   });
 
@@ -57,8 +63,14 @@ function swipeTable(mod) {
     if (countSlide > 0) {
       btnPrev.classList.add(`timetable__btn-prev_show`);
     }
-    if (countSlide > swiperWrapper[0].children.length - 8) {
-      btnNext.classList.remove(`timetable__btn-next_show`);
+    if (swiperWrapper[0].parentNode.clientWidth <= 560) {
+      if (countSlide > swiperWrapper[0].children.length - 6) {
+        btnNext.classList.remove(`timetable__btn-next_show`);
+      }
+    } else {
+      if (countSlide > swiperWrapper[0].children.length - 8) {
+        btnNext.classList.remove(`timetable__btn-next_show`);
+      }
     }
   });
 }
@@ -66,3 +78,5 @@ function swipeTable(mod) {
 addEventListenerForTimeTableToggle();
 swipeTable('terapia');
 swipeTable('diagnostik');
+swipeTable('cardiology');
+swipeTable('surgery');
