@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 // import Swiper, { Navigation } from 'swiper';
 import Swiper from 'swiper/bundle';
-=======
-import Swiper from 'swiper';
->>>>>>> f40e657287392379298668eb854c4603e4b35cd3
+// import Swiper from 'swiper';
 
 function addSwiperForSpecialistSwiper() {
   if (document.querySelector('.specialist__swiper')) {
@@ -22,29 +19,25 @@ function addSwiperForSpecialistSwiper() {
     });
   }
 }
-<<<<<<< HEAD
-=======
-
-function addSwiperForOurMissionSwiper() {
-  if (document.querySelector('.our-mission__swiper')) {
-    const ourMissionSwiper = new Swiper('.our-mission__swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      loop: true,
-      grabCursor: true
-    });
-
-    document.querySelector('.our-mission__swiper-next').addEventListener('click', () => {
-      ourMissionSwiper.slideNext();
-    });
-    document.querySelector('.our-mission__swiper-prev').addEventListener('click', () => {
-      ourMissionSwiper.slidePrev();
-    });
-  }
-}
-
->>>>>>> f40e657287392379298668eb854c4603e4b35cd3
 addSwiperForSpecialistSwiper();
+
+// function addSwiperForOurMissionSwiper() {
+//   if (document.querySelector('.our-mission__swiper')) {
+//     const ourMissionSwiper = new Swiper('.our-mission__swiper', {
+//       slidesPerView: 'auto',
+//       spaceBetween: 16,
+//       loop: true,
+//       grabCursor: true
+//     });
+
+//     document.querySelector('.our-mission__swiper-next').addEventListener('click', () => {
+//       ourMissionSwiper.slideNext();
+//     });
+//     document.querySelector('.our-mission__swiper-prev').addEventListener('click', () => {
+//       ourMissionSwiper.slidePrev();
+//     });
+//   }
+// }
 
 
 function petServiceSwiper() {
@@ -75,6 +68,7 @@ function petServiceSwiper() {
   });
 }
 petServiceSwiper();
+
 
 function swiperHistory() {
   const swiperHistory = document.querySelector(".history__swiper");
