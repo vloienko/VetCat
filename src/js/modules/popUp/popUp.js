@@ -45,7 +45,7 @@ function showFeedback() {
   if (document.querySelector('.btn_feedback')) {
     const btnsFeedback = document.querySelectorAll('.btn_feedback');
     const closeFeedback = document.querySelectorAll('.popUp-feedback__close');
-    const popUp = document.querySelector('');
+    const popUp = document.querySelector('.popUp-feedback');
 
     btnsFeedback.forEach(elem => {
       elem.addEventListener('click', () => {
@@ -80,8 +80,27 @@ function showReception() {
     });
   }
 }
+function showReviewModal() {
+  if (document.querySelector('.review-modal')) {
+    const btnsReviewModal = document.querySelectorAll('.feedback__btn');
+    const feedBackModal = document.querySelector('.review-modal');
+    const feedBackClose = document.querySelector('.review-modal__close');
+
+    btnsReviewModal.forEach(elem => {
+      elem.addEventListener('click', e => {
+        feedBackModal.classList.add('review-modal_show');
+      });
+    });
+
+    feedBackClose.addEventListener('click', e => {
+      feedBackModal.classList.remove('review-modal_show');
+    });
+  }
+}
 
 initSelectInFeedback();
 initToggleInReception();
 
 showReception();
+showFeedback();
+showReviewModal();

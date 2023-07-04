@@ -26,6 +26,7 @@ import './modules/pages/info.js';
 import './modules/pages/about-us.js';
 import './modules/pages/search.js';
 import './modules/pages/timetable.js';
+import './modules/pages/specialist.js';
 
 // import './modules/main/';
 // import './modules/main/';
