@@ -1,0 +1,56 @@
+<div class="popUp-feedback">
+	<div class="popUp-feedback__wrapper">
+		<div class="popUp-feedback__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 4L20 20M4 20L20 4" stroke-width="2" />
+			</svg>
+		</div>
+		<div class="popUp-feedback__title">
+			Оставить отзыв
+		</div>
+		<form>
+			<div class="label">Специалист</div>
+			<div class="popUp-feedback__select">
+				<div class="popUp-feedback__selected">
+					Малицкая Валерия Викторовна
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 8C19 8 14 13 12 16C10 13 5 8 5 8" stroke="#292D33" stroke-width="2" />
+					</svg>
+				</div>
+				<div class="popUp-feedback__list">
+					<div class="popUp-feedback__list-item popUp-feedback__list-item_active">Малицкая Валерия Викторовна</div>
+					<div class="popUp-feedback__list-item">Ярославская
+						Екатерина Ивановна</div>
+					<div class="popUp-feedback__list-item">Савченко
+						Екатерина Сергеевна</div>
+				</div>
+			</div>
+			<textarea name="feedback" id="feedback" class="popUp-feedback__area" required></textarea>
+	
+			<div class="input-wrapper">
+				<label for="name">Ваше имя</label>
+				<input type="text" name="name" id="name" required>
+			</div>
+			<div class="input-wrapper input-wrapper_second">
+				<label for="email">E-mail для ответа</label>
+				<div class="label label_absolute">не публикуем на сайте</div>
+				<input type="email" name="email" id="email" required>
+			</div>
+			<div class="input-wrapper input-wrapper_last">
+				<div class="terms">
+					<label class="terms__check">
+						<input type="checkbox" name="terms" id="terms" required>
+						<span class="terms__checkmark"></span>
+					</label>
+					<div class="terms__terms">
+						Я согласен с <a href="#"> условиями обработки
+							персональных данных</a>
+					</div>
+				</div>
+				<button class="btn btn_green popUp-feedback__btn">
+					Отправить
+				</button>
+			</div>
+		</form>
+	</div>
+</div>
