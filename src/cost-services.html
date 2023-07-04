@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_static/head.html',{
+"title":"Стоимость услуг клиники"
+})
+
+<body>
+	<div class="wrapper">
+		@@include("html/main/header.html",{})
+		<div class="sidebar-container">
+			@@include('html/main/sidebar.html',{})
+			<main class="main">
+				@@include('html/pages/cost-services.html',{})
+
+				@@include('html/main/footer.html',{})
+			</main>
+		</div>
+	</div>
+	@@include('html/_static/script.html',{})
+</body>
+
+</html>
