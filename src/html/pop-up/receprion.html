@@ -1,0 +1,61 @@
+<div class="popUp-reception">
+	<div class="popUp-reception__wrapper">
+		<div class="popUp-reception__close">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M4 4L20 20M4 20L20 4" stroke-width="2" />
+			</svg>
+		</div>
+		<div class="popUp-reception__title">
+			Запись на прием
+		</div>
+		<form>
+			<div class="input-wrapper__name">
+				<label for="name">Имя и фамилия</label>
+				<input type="text" name="name" id="name" required>
+			</div>
+			<div class="input-wrapper__tel">
+				<label for="phone">Телефон</label>
+				<input type="tel" name="phone" id="phone" required>
+			</div>
+			<div class="input-wrapper__toggle">
+				<label>Филиал центра</label>
+				<div class="toggle popUp-reception__toggle">
+					<div class="toggle__item toggle__item_active">Строгино</div>
+					<div class="toggle__item">Донской</div>
+				</div>
+			</div>
+			<div class="input-wrapper__date">
+				<label for="date">Дата приема</label>
+				<input type="date" name="date" id="date" required>
+			</div>
+			<div class="input-wrapper__pets">
+				<label for="pets">Кто ваш питомец?</label>
+				<div class="label_absolute">например, кот Кокос</div>
+				<input type="text" name="pets" id="pets" required>
+			</div>
+			<div class="input-wrapper__text">
+				<label for="text">Сообщение <span>(необязательно)</span></label>
+				<div class="subtext">
+					Можете описать проблему вашего питомца или указать
+					специалиста, к которому хотите попасть на прием
+				</div>
+				<textarea name="text" id="text" ></textarea>
+			</div>
+			<div class="input-wrapper__terms">
+				<div class="terms">
+					<label class="terms__check">
+						<input type="checkbox" name="terms" id="terms" required>
+						<span class="terms__checkmark"></span>
+					</label>
+					<div class="terms__terms">
+						Я согласен с <a href="#"> условиями обработки
+							персональных данных</a>
+					</div>
+				</div>
+				<button class="btn btn_green popUp-reception__btn">
+					Записаться
+				</button>
+			</div>
+		</form>
+	</div>
+</div>

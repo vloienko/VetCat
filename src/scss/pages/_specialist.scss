@@ -1,0 +1,8 @@
+.specialist {
+  .path {
+    flex-wrap: wrap;
+  }
+  @import '../_components/specialist/info';
+  @import '../_components/specialist/profile';
+  @import '../_components/specialist/review';
+}
