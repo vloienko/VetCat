@@ -58,7 +58,7 @@ function showFeedback() {
     closeFeedback.forEach(elem => {
       elem.addEventListener('click', e => {
         popUp.classList.remove('popUp-feedback_show');
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflow = 'auto';
       });
     });
   }
@@ -79,7 +79,7 @@ function showReception() {
     closeReception.forEach(elem => {
       elem.addEventListener('click', e => {
         popUp.classList.remove('popUp-reception_show');
-        document.body.style.overflow = 'scroll';
+        document.body.style.overflow = 'auto';
       });
     });
   }
@@ -99,7 +99,7 @@ function showReviewModal() {
 
     feedBackClose.addEventListener('click', e => {
       feedBackModal.classList.remove('review-modal_show');
-      document.body.style.overflow = 'scroll';
+      document.body.style.overflow = 'auto';
     });
   }
 }
