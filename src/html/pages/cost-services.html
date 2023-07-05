@@ -1,0 +1,67 @@
+<section class="cost-services">
+   <div class="container">
+      <div class="path">
+         <a href="index.html" class="path__main">
+            Главная
+         </a>
+         <div class="path__arrow">
+            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path
+                  d="M-1.5299e-07 4.5L14 4.5M14 4.5C12.4108 3.5 9.78494 1 9.78494 1M14 4.5C12.4108 5.5 9.78494 8 9.78494 8"
+                  stroke="#797C80" />
+            </svg>
+         </div>
+         <div class="path__this">
+            Стоимость
+         </div>
+      </div>
+      <div class="cost-services__body">
+         <h2 class="cost-services__title h2-title">Стоимость услуг клиники</h2>
+         <h4 class="cost-services__sub-title">
+            Для удобства все собрали цены на все услуги в одном месте. Выберите специализацию и воспользуйтесь поиском.
+         </h4>
+
+         <div class="cost-services__block mixitup-filter">
+            <div class="cost-services__tabs">
+               <button class="cost-services__button tab-btn active" type="button" data-filter=".all-services">Все услуги<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-1">Вакцинация и чипирование<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-2">Вызов врача на дом<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-3">Гастроэнтерология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-4">Гостиница для животных<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-5">Груминг<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-6">Дерматология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-7">Кардиология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-8">Кастрация<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-9">Лабораторная диагностика<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-10">Нефрология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-11">Онкология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-12">Ортопедия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-13">Офтальмология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-14">Реанимация и интенсивная терапия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-15">Рентген<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-16">Репродуктология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-17">Стационар<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-18">Стоматология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-19">Терапия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-20">Травматология<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-21">УЗИ<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-22">Хирургия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-23">Эвтаназия<button>
+               <button class="cost-services__button tab-btn" type="button" data-filter=".service-24">Эндокринология<button>
+            </div>
+            <div class="cost-services__input">
+               <div class="search__form">
+                  <input type="text" class="search__input" placeholder="Введите название услуги"></input>
+                  <div class="search__btn btn btn_green">Найти</div>
+               </div>
+            </div>
+            <div class="cost-services__filter">
+				   @@include('../components/cost-services/vaccination-and-chipping.html',{})
+				   @@include('../components/cost-services/dermatology.html',{})
+				   @@include('../components/cost-services/resuscitation-and-intensiveCare.html',{})
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
