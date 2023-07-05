@@ -109,12 +109,12 @@ function showFeedback() {
   }
 }
 
-function toggleContentForAboutUs(index) {
+function toggleContentForAboutUs(index = 0) {
   const aboutUsBody = document.querySelector('.about-us__body .container');
 
   aboutUsBody.innerHTML = '';
 
-  switch (index) {
+  switch (+index) {
     case 0:
       aboutUsBody.innerHTML = `
       <div class="our-mission">
@@ -594,7 +594,8 @@ function addEventListenerForAboutUsToggle() {
       aboutUsToggleItem[index].classList.add('toggle__item_active');
     };
 
-    toggleContentForAboutUs(0);
+    toggleContentForAboutUs(sessionStorage.getItem('id'));
+		addActiveClassForToggleItem(sessionStorage.getItem('id'));
 
     aboutUsToggleItem.forEach((elem, index) => {
       elem.addEventListener('click', e => {
