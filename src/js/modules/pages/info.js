@@ -25,12 +25,12 @@ function addEventListenerForInfoToggle() {
 
 addEventListenerForInfoToggle();
 
-function toggleContentForInfo(index) {
+function toggleContentForInfo(index = 0) {
   const infoBody = document.querySelector('.info__body .container');
 
   infoBody.innerHTML = '';
 
-  if (index) {
+  if (+index) {
     infoBody.innerHTML = `
     <div class="articles">
 	<div class="articles__group">
