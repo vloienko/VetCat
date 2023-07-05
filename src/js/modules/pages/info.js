@@ -10,7 +10,8 @@ function addEventListenerForInfoToggle() {
       infoToggleItem[index].classList.add('toggle__item_active');
     };
 
-    toggleContentForInfo(0);
+    toggleContentForInfo(sessionStorage.getItem('id'));
+		addActiveClassForToggleItem(sessionStorage.getItem('id'))
 
     infoToggleItem.forEach((elem, index) => {
       elem.addEventListener('click', e => {

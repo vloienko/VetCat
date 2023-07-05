@@ -60,6 +60,13 @@ function sidebar() {
       content.style.marginTop = "0";
    }
 
+   const links = document.querySelectorAll('.sidebar__sub-link')
+
+   links.forEach(elem => {
+      elem.addEventListener("click", (e) => {
+         sessionStorage.setItem('id', elem.getAttribute('data-id'));
+      });
+   })
 }
 
 sidebar();

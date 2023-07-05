@@ -1,6 +1,7 @@
 // Swiper
 @import '../../node_modules//swiper/swiper-bundle';
 
+
 //<SETTINGS>========================================
 @import '_fonts/fonts';
 @import '_base/null';
@@ -18,7 +19,6 @@
 @import 'main/sidebar';
 
 //Components
-
 @import '_components/patientHistoryCard';
 @import '_components/galleryCard';
 @import '_components/serviceCard';
@@ -40,6 +40,9 @@
 @import 'pages/index/social';
 @import 'pages/index/adress';
 
+// cost-services.html
+@import 'pages/cost-services';
+                                                    
 @import 'pages/all-services';
 @import 'pages/services';
 @import 'pages/contacts';
@@ -53,4 +56,4 @@
 @import 'pop-up/pop-up';
 //</PAGES STYLE>====================================
 
-@import '_base/extra.scss';
+// @import '_base/extra.scss';

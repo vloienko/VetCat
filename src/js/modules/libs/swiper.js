@@ -1,4 +1,6 @@
+// import Swiper, { Navigation } from 'swiper';
 import Swiper from 'swiper/bundle';
+// import Swiper from 'swiper';
 
 function addSwiperForSpecialistSwiper() {
   if (document.querySelector('.specialist__swiper')) {
@@ -17,6 +19,8 @@ function addSwiperForSpecialistSwiper() {
     });
   }
 }
+addSwiperForSpecialistSwiper();
+
 
 function addSwiperForOurMissionSwiper() {
   if (document.querySelector('.our-mission__swiper')) {
@@ -35,8 +39,7 @@ function addSwiperForOurMissionSwiper() {
     });
   }
 }
-
-addSwiperForSpecialistSwiper();
+addSwiperForOurMissionSwiper();
 
 
 function petServiceSwiper() {
@@ -67,6 +70,7 @@ function petServiceSwiper() {
   });
 }
 petServiceSwiper();
+
 
 function swiperHistory() {
   const swiperHistory = document.querySelector(".history__swiper");
