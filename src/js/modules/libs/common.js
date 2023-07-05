@@ -1,5 +1,6 @@
 function smoothLinks() {
-  const smoothLinks = document.querySelectorAll('a[href^="#"]');
+  if(document.querySelectorAll('a[href^="#"]')) {
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
   for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
       e.preventDefault();
@@ -10,6 +11,7 @@ function smoothLinks() {
         block: 'start'
       });
     });
+  }
   }
 }
 

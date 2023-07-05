@@ -8,6 +8,11 @@
 
   background: rgba($color: $color-blackout, $alpha: 0.8999999761581421);
 
+  @media (max-height: 819px) {
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
+
   position: absolute;
   top: 0;
   left: 0;
@@ -32,6 +37,10 @@
       padding: 40px;
       height: 100%;
       border-radius: 0;
+    }
+
+    @media (max-width: 560px) {
+      overflow: scroll;
     }
 
     @media (max-width: 425px) {
@@ -309,6 +318,11 @@
 
   background: rgba($color: $color-blackout, $alpha: 0.8999999761581421);
 
+  @media (max-height: 884px) {
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
+
   position: absolute;
   top: 0;
   left: 0;
@@ -416,6 +430,7 @@
 
       input {
         padding-left: 16px;
+        padding-right: 16px;
         width: 284px;
         height: 40px;
         display: flex;
@@ -433,6 +448,16 @@
     &__tel,
     &__date {
       margin-top: 8px;
+    }
+
+    &__date {
+      input {
+        &::-webkit-calendar-picker-indicator {
+          opacity: 0;
+          cursor: pointer;
+        }
+        background: url(../../img/popUp/calendar.png) no-repeat 95% 50%;
+      }
     }
 
     &__toggle {
