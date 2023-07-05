@@ -17,6 +17,10 @@
     color: $color-text-1;
   }
 
+  &__toggle {
+    width: 234.484px;
+  }
+
   @import '../_components/services/info';
   @import '../_components/services/price';
   @import '../_components/services/specialist';
