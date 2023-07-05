@@ -27,13 +27,6 @@
       justify-content: flex-start;
       flex-wrap: wrap;
       gap: 8px;
-
-      button {
-         display: none;
-      }
-      button.cost-services__button {
-         display: block;
-      }
    }
 
    &__input {
