@@ -51,12 +51,14 @@ function showFeedback() {
       elem.addEventListener('click', () => {
         console.log('click');
         popUp.classList.add('popUp-feedback_show');
+        document.body.style.overflow = 'hidden';
       });
     });
 
     closeFeedback.forEach(elem => {
       elem.addEventListener('click', e => {
         popUp.classList.remove('popUp-feedback_show');
+        document.body.style.overflow = 'auto';
       });
     });
   }
@@ -70,12 +72,14 @@ function showReception() {
     btnsReception.forEach(elem => {
       elem.addEventListener('click', () => {
         popUp.classList.add('popUp-reception_show');
+        document.body.style.overflow = 'hidden';
       });
     });
 
     closeReception.forEach(elem => {
       elem.addEventListener('click', e => {
         popUp.classList.remove('popUp-reception_show');
+        document.body.style.overflow = 'auto';
       });
     });
   }
@@ -89,11 +93,13 @@ function showReviewModal() {
     btnsReviewModal.forEach(elem => {
       elem.addEventListener('click', e => {
         feedBackModal.classList.add('review-modal_show');
+        document.body.style.overflow = 'hidden';
       });
     });
 
     feedBackClose.addEventListener('click', e => {
       feedBackModal.classList.remove('review-modal_show');
+      document.body.style.overflow = 'auto';
     });
   }
 }
