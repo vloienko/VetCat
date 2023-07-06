@@ -3,7 +3,7 @@
    background-color: $lightgreen2;
    border: 1px solid #CFDFE5;
    position: relative;
-   z-index: 15;
+   z-index: 100;
    @include screen-xl {
       height: 68px;
    }
