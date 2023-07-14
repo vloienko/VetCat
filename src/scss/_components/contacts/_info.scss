@@ -23,6 +23,9 @@
   font-weight: 700;
   line-height: 35px;
   color: $color-text-1;
+  @include screen-s {
+    font-size: 26px;
+  }
 }
 
 &__label {

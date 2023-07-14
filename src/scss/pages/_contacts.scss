@@ -5,9 +5,9 @@
     margin-top: 6px;
 
     @include adaptiveValue('font-size', 48, 32);
+    @include adaptiveValue('line-height', 56, 42);
     font-family: 'Manrope';
     font-weight: 700;
-    line-height: 56px;
     color: $color-text-1;
   }
 
