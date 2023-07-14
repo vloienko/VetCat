@@ -28,6 +28,7 @@
   z-index: -10;
 
   transition: all 0.1s;
+  overflow-y: auto;
 
   &_show {
     opacity: 1;
@@ -80,18 +81,11 @@
     margin: 0 auto;
     margin-top: 82px;
     position: relative;
+    padding: 0 20px;
   }
 
   &__swiper {
     width: min(100%, 900px);
-
-    @media (max-height: 927px) {
-      width: 40%;
-    }
-
-    @media (max-width: 425px) {
-      width: 80%;
-  }
   }
 
   &__swiper-wrapper {
